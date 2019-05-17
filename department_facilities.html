@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Voting</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="style_department.css">
+    </head>
+
+    <body background="background-1.jpg">
+        <div class="w3-container">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item">
+                    <img class="w3-image logo" src="quantiphi-logo.png" alt="Quantiphi Logo">
+                </a>
+            </div>
+            <div class="outer-div">
+                <div class="inner-div">
+                    <div class="description-text">
+                        <div>
+                            <span id="department-text">Department: Facilities</span>
+                            <br>
+                            <div class="w3-row">
+                                <div class="w3-col s8">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus expedita dolorum<br>
+                                    doloremque repellat voluptatum id exercitationem tempore rerum, impedit beatae asperiores corporis<br> 
+                                    autem similique excepturi dicta cupiditate eligendi accusantium.
+                                </div>
+                                <div class="w3-col s4">
+                                    <button id="submit-button" type="submit" value="MOVE ON TO THE NEXT DEPARTMENT" disabled = "true" class="w3-button w3-round"></button>
+                                    <!-- <button id="yes-button" class="w3-button w3-round">MOVE ON TO THE NEXT DEPARTMENT</button> -->
+                                </div>            
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="choose-mascot-text">
+                        <span id="bold-text">Choose your mascot for this department</span>
+                        <span id="light-text">(hover over each mascot to know its meaning)</span>
+                    </div>
+
+                    <div id="id-tooltip-parent" class="w3-row-padding">
+                        <div id="tooltip-1" class="w3-col m2 w3-center w3-tooltip">
+                            <img class="temp-image w3-image" src="mascot_cat.png">
+                            <div class="mascot-text">World is my Oyster</div> 
+                        </div>
+                        <div id="tooltip-2" class="w3-col m2 w3-center w3-tooltip">
+                            <img class="temp-image w3-image" src="mascot_cat.png">
+                            <div class="mascot-text">Cat's Meow</div> 
+                        </div>
+                        <div id="tooltip-3" class="w3-col m2 w3-center w3-tooltip">
+                            <img class="temp-image w3-image" src="mascot_cat.png">
+                            <div class="mascot-text">Whale of a time</div> 
+                        </div>
+                        <div id="tooltip-4" class="w3-col m2 w3-center w3-tooltip">
+                            <img class="temp-image w3-image" src="mascot_cat.png">
+                            <div class="mascot-text">Elephant in the room</div> 
+                        </div>
+                        <div id="tooltip-5" class="w3-col m2 w3-center w3-tooltip">
+                            <img class="temp-image w3-image" src="mascot_cat.png">
+                            <div class="mascot-text">Dead Fish</div> 
+                        </div>
+                        <div id="tooltip-6" class="w3-col m2 w3-center w3-tooltip">
+                            <img class="temp-image w3-image" src="mascot_cat.png">
+                            <div class="mascot-text">Wild Goose Chase</div> 
+                        </div>
+                    </div>
+                    
+                    <div id="id-tag-parent" class="w3-row">
+                        <div id="tag-1" class="w3-col m2 w3-center w3-text w3-tag">My work/the attributes initiative is not having
+                                direction and needs greater mentorship or leadership
+                        </div>
+                        <div id="tag-2" class="w3-col m2 w3-center w3-text w3-tag">My work/the attributes initiative is not having
+                                direction and needs greater mentorship or leadership
+                        </div>
+                        <div id="tag-3" class="w3-col m2 w3-center w3-text w3-tag">My work/the attributes initiative is not having
+                                direction and needs greater mentorship or leadership
+                        </div>
+                        <div id="tag-4" class="w3-col m2 w3-center w3-text w3-tag">My work/the attributes initiative is not having
+                                direction and needs greater mentorship or leadership
+                        </div>
+                        <div id="tag-5" class="w3-col m2 w3-center w3-text w3-tag">My work/the attributes initiative is not having
+                                direction and needs greater mentorship or leadership
+                        </div>
+                        <div id="tag-6" class="w3-col m2 w3-center w3-text w3-tag">My work/the attributes initiative is not having
+                                direction and needs greater mentorship or leadership
+                        </div>
+                    </div>
+
+                    <!-- Ratings section -->
+
+                    <div id="rating-section" class="w3-container w3-row-padding">
+                        <div class="w3-col l4 m6 s12">
+                            <div class="choose-mascot-text">
+                                <span id="bold-text">Overall Rating for Facilities</span>
+                                <span id="light-text">(1-lowest, 5-highest)</span>
+                            </div>
+                            <form class="rating" name="form-rating">
+                                <label>
+                                    <input type="radio" name="stars" value="1" class="star-radio" />
+                                    <span class="icon">★</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="stars" value="2" class="star-radio" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="stars" value="3" class="star-radio" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>   
+                                </label>
+                                <label>
+                                    <input type="radio" name="stars" value="4" class="star-radio" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="stars" value="5" class="star-radio" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                </label>
+                            </form>
+                            <div>
+                                <div class="choose-mascot-text">
+                                    <span id="bold-text">Share your reasons for selecting </span>
+                                    <span id="selected-mascot-text">Wild Goose Chase</span>
+                                </div>
+                                <form class="reasons-checkbox" name="form-checkbox">
+                                    <input type="checkbox" name="check-1" value="check-1" class="reasons-check">
+                                        <label for="checkbox">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label> 
+                                    <br>
+                                    <input type="checkbox" name="check-2" value="check-2" class="reasons-check">
+                                        <label for="checkbox">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+                                    <br>
+                                    <input type="checkbox" name="check-3" value="check-3" class="reasons-check">
+                                        <label for="checkbox">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label> 
+                                    <br>
+                                    <input type="checkbox" name="check-4" value="check-4" class="reasons-check">
+                                        <label for="checkbox">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+                                    <br>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="w3-col l4 m6 s12">
+                            <div class="more-reasons-text choose-mascot-text">
+                                Any more reasons?
+                            </div>
+                            <div class="text-input">
+                                <input class="w3-input" type="text" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                                <input class="w3-input" type="text" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                                <input class="w3-input" type="text" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                                <input class="w3-input" type="text" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                                <input class="w3-input" type="text" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                                <input class="w3-input" type="text" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                            </div>  
+                        </div>
+                        <div class="w3-col l4 m12 s12">
+                            <div class="more-reasons-text choose-mascot-text">
+                                Suggestions
+                            </div>
+                            <div class="suggestions-box">
+                                <textarea name="suggestions" class="w3-input w3-border" rows="8"></textarea>
+                                <!-- <input id="suggestions" class="w3-input w3-border" name="suggestions" type="text"> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ratings section end -->
+
+                </div>
+            </div>
+        </div>     
+    </body>
+
+    <script type="text/javascript">
+
+        var mascots = document.getElementsByClassName('w3-tooltip');
+        var tooltipParent = document.getElementById('id-tooltip-parent');
+
+        for(var i = 1; i < tooltipParent.children.length + 1; i++) {
+            (function(index) {
+                document.getElementById('tooltip-' + index).onmouseover = function() {
+                    console.log("in onmouseover, index: " + index);
+                    document.getElementById('tag-' + index).style.visibility = "visible";
+                }
+                document.getElementById('tooltip-' + index).onmouseout = function() {
+                    console.log("in onmouseout, index: " + index);
+                    document.getElementById('tag-' + index).style.visibility = "hidden";
+                }
+            })(i);
+        }
+
+        for(var i = 0; i < tooltipParent.children.length; i++) {
+            (function(index) {
+                tooltipParent.children[i].onclick = function() {
+                    console.log("clicked element position: " + index + "i: " + i);
+                    for(var j = 0; j < mascots.length; j++) {
+                        if(j == index) { 
+                            mascots[j].style.opacity = "1";
+                            var text = mascots[j].children[1].textContent;
+                            document.getElementById('selected-mascot-text').textContent = text;
+                            document.getElementById('submit-button').style.visibility = "visible";
+                            continue;
+                        } else {
+                            mascots[j].style.opacity = "0.3";
+                        }
+                    }
+
+                    document.getElementById('id-tag-parent').style.display = "none";
+                    var ratingID = document.getElementById('rating-section');
+                    ratingID.style.display = "block";
+                    ratingID.style.border = "none";
+                    ratingID.style.paddingTop = "0";
+                }    
+            })(i);
+        }
+
+        var submitBtn = document.getElementById('submit-button');
+        submitBtn.onclick = function() {
+            var ratingID = document.getElementById('rating-section');
+            ratingID.style.display = "none";
+            submitBtn.style.visibility = "hidden";
+
+        }
+
+
+        var radioButtons = $('.star-radio');
+        var checkBoxes = $('.reasons-check');
+        var radioSelected = false;
+        var checkboxSelected = false;
+        var submitButton = document.getElementById('submit-button');
+        submitButton.textContent = "MOVE ON TO THE NEXT DEPARTMENT";
+
+        radioButtons.change(function () {
+            radioSelected = !(radioButtons.filter(':checked').length < 1);;
+            if(checkboxSelected && radioSelected) {
+                submitButton.style.backgroundColor = "rgb(40, 181, 133)";
+                submitButton.textContent = "MOVE ON TO THE NEXT DEPARTMENT";
+                submitButton.onmouseover = function() {
+                    submitButton.style.backgroundColor = "rgb(40, 181, 133) !important";
+                }
+                $('#submit-button').prop('disabled', false);
+            }
+            //$('#submit-button').prop('disabled', radioButtons.filter(':checked').length < 1 && checkboxSelected);
+        });
+        radioButtons.change();
+
+        checkBoxes.change(function () {
+            checkboxSelected = !(checkBoxes.filter(':checked').length < 1);
+            if(checkboxSelected && radioSelected) {
+                submitButton.style.backgroundColor = "rgb(40, 181, 133)";
+                submitButton.onmouseover = function() {
+                    submitButton.style.backgroundColor = "rgb(40, 181, 133) !important";
+                }
+                $('#submit-button').prop('disabled', false);
+            }
+            //$('#submit-button').prop('disabled', radioSelected && checkBoxes.filter(':checked').length < 1);
+        });
+        checkBoxes.change();
+
+    </script>
+</html>

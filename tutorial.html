@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400" rel="stylesheet">
+        <link rel="stylesheet" href="style_tutorial.css">
+    </head>
+
+    <body background="background-1.jpg">
+        <div class="w3-container">
+            <div class="w3-bar">
+                    <a href="#" class="w3-bar-item">
+                        <img class="w3-image logo" src="quantiphi-logo.png" alt="Quantiphi Logo">
+                    </a>
+            </div>
+            <div class="outer-div">
+                <div class="inner-div">
+                    <div class="tutorial-text">
+                        Would you like a tutorial on how the system works?
+                    </div>  
+                    <div class="yes-no-buttons">
+                        <p>
+                            <button id="yes-button" class="w3-button w3-round">YES, I'D LIKE THAT</button>
+                            <button id="no-button" class="w3-button w3-round">NO, I CAN START</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </body>
+
+    <script type="text/javascript">
+        document.getElementById("yes-button").onclick = function () {
+            location.href = "./department_facilities.html";
+        };
+        document.getElementById("no-button").onclick = function () {
+            location.href = "./department_facilities.html";
+        };
+    </script>
+</html>

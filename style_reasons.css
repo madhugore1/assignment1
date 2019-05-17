@@ -1,0 +1,229 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+}
+
+.w3-container {
+    min-height: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.w3-bar {
+    background: white;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    box-shadow: 0 4px 4px 0 rgb(189, 195, 201), 0 4px 10px 0 rgb(189, 195, 201);
+}
+
+.w3-bar .w3-bar-item {
+    padding: 0 2vw;
+    margin: auto 0;
+}
+
+.w3-image.logo {
+    height: 10vh;
+}
+
+.w3-bar-item:hover {
+    background: white !important;
+}
+
+.outer-div {
+    margin-top: 10vh;
+    min-height: 90vh;
+    width: 100%;
+    padding: 4vh 4vw;
+}
+
+.inner-div {
+    width: 100%;
+}
+
+#department-text {
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.description-text {
+    width: 100%;
+    font-size: 1vw;
+    padding: 0;
+    font-weight: 300;
+}
+
+.choose-mascot-text {
+    font-size: 1vw;
+    margin-top: 2vh;
+}
+
+#bold-text {
+    font-weight: 400;
+}
+
+#light-text {
+    font-weight: 300;
+}
+
+.w3-row {
+    position: relative;
+}
+
+.w3-button {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    vertical-align: middle;
+    right: 0;
+    background-color: rgb(40, 181, 133);
+    color: white;
+    font-size: 1vw;
+    font-weight: 400;
+    width: 28vw;
+    padding: 2vh 0;
+    box-shadow: 0 12px 16px 0 rgb(178, 185, 193), 0 17px 50px 0 rgb(178, 185, 193);
+}
+
+.w3-button:hover {
+    background-color: rgb(40, 181, 133) !important;
+    color: white !important;
+}
+
+
+#row-1.w3-row-padding {
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    border: 2px solid rgb(184, 191, 198);
+}
+
+.temp-image {
+    width: 7vw;
+}
+
+.mascot-text {
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 2vw;
+    font-size: 2vw;
+}
+
+.rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.rating label:last-child {
+    position: static;
+}
+
+.rating label:nth-child(1) {
+    z-index: 4;
+}
+
+.rating label:nth-child(2) {
+    z-index: 3;
+}
+
+.rating label:nth-child(3) {
+    z-index: 2;
+}
+
+.rating label:nth-child(4) {
+    z-index: 1;
+}
+
+.rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.rating label .icon {
+    float: left;
+    color: transparent;
+    padding-right: 1vw;
+}
+
+.rating label:last-child .icon {
+    color: #fff;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+    color: rgb(243, 200, 46);
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px rgb(243, 200, 46);
+}
+
+#selected-mascot-text {
+    font-weight: 400;
+    color: rgb(174, 26, 25);
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: white;
+    width: 1.3vw;
+    height: 1.3vw;
+    border: 10px rgb(80, 77, 77) !important;
+    text-align: center;
+}
+
+input[type=checkbox] + label {
+    font-weight: 300;
+    font-size: 1vw !important;
+    padding: 0 0.5vw;
+}
+
+input[type="checkbox"]:checked:after {
+    content: "\2713";
+    color: green;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.more-reasons-text {
+    margin-bottom: 2vh;
+}
+
+.w3-input {
+    padding: 0 !important;
+    font-size: 1vw;
+    background: none;
+    margin-bottom: 1vh;
+}
+
+.text-input {
+    float: bottom;
+}
+
+.suggestions-box {
+    position: relative;
+    height: 100%;
+}
+
+#suggestions {
+    position: absolute;
+    min-height: 100%;
+    top: 0;
+}
+
+
+
